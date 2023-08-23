@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ```mermaid
 
 sequenceDiagram
@@ -33,3 +34,35 @@ browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 
 
 ```
+=======
+```mermaid
+
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    activate server
+    server-->>browser: HTML document
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    activate server
+    server-->>browser: CSS
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+    activate server
+    server-->>browser: JS
+    deactivate server
+
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: DATA JSON
+    deactivate server
+
+
+
+
+```
+>>>>>>> 64bbef4c881d844dd1bb285a059c4e1ccd79df5a
